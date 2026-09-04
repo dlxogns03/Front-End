@@ -1,0 +1,102 @@
+.hidden-menu {
+  /* 화면에서 보여주지 말아라  */
+  display: none;
+}
+
+ul {
+  margin: 0;
+  margin: 0;
+}
+
+ul > li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+
+  vertical-align: top;
+}
+
+/* .pseudo-class 의 li에게 마우스를 올리면 변화한다. */
+.pseudo-class > li:hover {
+  background-color: #ffadad;
+  color: #fff;
+  text-decoration: underline #f00;
+  font-weight: 900;
+}
+
+/* .pseudo-class 의 li에게 숨겨져 있던 
+    .hidden-menu를 보여준다 */
+/* 마우스가 올라간 li 밑에 있는 .hidden-menu를 선택한다. */
+.pseudo-class > li:hover > .hidden-menu {
+  display: block;
+  background-color: #ffd8dc;
+
+  color: #000;
+  text-decoration: none;
+}
+
+/*  .pseudo-class의 li에 마우스로 누르면 폰트의 크기를 증가시킨다.*/
+
+.pseudo-class > li:active {
+  font-size: 1.5rem;
+  background-color: aqua;
+  color: purple;
+}
+
+/* .pseudo-class의 첫 번째 li만 배경색을 변경한다. */
+.pseudo-class > li:nth-child(1) {
+  background-color: burlywood;
+}
+
+/* .pseudo-class의 짝수 번째 li만 배경색을 변경한다. */
+.pseudo-class > li:nth-child(2n) {
+  background-color: violet;
+}
+
+/* 링크의 기본 스타일을 변경한다. */
+a:link {
+  text-decoration: none;
+  color: #666;
+}
+
+/* 클릭한 적 있는 링크의 스타일을 변경한다 */
+a:visited {
+  color: #999;
+}
+
+a:hover {
+  color: #a66;
+  text-decoration: underline dashed #f00;
+}
+
+a:active {
+  color: #f00;
+  text-decoration: none;
+}
+
+.movd-link,
+.open-new-tab {
+  vertical-align: middle;
+}
+
+.open-new-tab::before {
+  content: url("../images/open_in_new_16.svg");
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.movd-link::after {
+  content: url("../images/link_16.svg");
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.open-new-tab:hover::before {
+  content: url("../images/open_in_new_16-red.svg");
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.movd-link:hover::after {
+  content: url("../images/link_16-red.svg");
+  vertical-align: middle;
+  margin-left: 6px;
+}
