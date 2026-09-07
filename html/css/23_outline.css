@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+div:focus,
+ul:focus,
+li:focus,
+button:focus {
+  outline: 1px solid #f00;
+  border-radius: 10px;
+}

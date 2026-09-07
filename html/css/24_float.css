@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 700px;
+  min-width: 200px;
+
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #f00;
+}
+.float-wrapper {
+  content: "";
+}
+.float-wrapper::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-wrapper > div:first-child {
+  margin: 0;
+}
+/* .float-clear {
+  clear: both;
+} */
+.float-left {
+  float: left;
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #00f;
+  margin-right: 5px;
+}
+.float {
+  float: right;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #0f0;
+  margin-right: 5px;
+}
+
+p {
+  margin: 0;
+}

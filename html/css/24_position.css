@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+.absolute-top-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.absolute-top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.absolute-bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.absolute-bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* =======fixed======== */
+
+.fixed-top-left {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.fixed-top-right {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.relative-1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  background-color: antiquewhite;
+
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.relative-2 {
+  position: relative;
+  top: 30px;
+  left: 30px;
+
+  background-color: antiquewhite;
+
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.relative-3 {
+  position: relative;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: antiquewhite;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.relative-box {
+  position: relative;
+
+  font-size: 1.15rem;
+
+  width: 300px;
+  height: 600px;
+
+  padding: 10px;
+  border: 2px solid #000;
+
+  background-color: aqua;
+}
+
+.absolute-box {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+
+  padding: 10px;
+
+  background-color: #0003;
+  color: #fff;
+}
+
+.relative-box:hover > .absolute-box {
+  top: 0px;
+}
+
+.image-box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  font-size: 0;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+
+    vertical-align: bottom;
+  }
+
+  & > .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d708da77;
+
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  &:hover > .name {
+    top: 0;
+    padding: 48% 0;
+  }
+}
+
+.main {
+  width: 200px;
+  height: 300px;
+
+  margin: 10px;
+
+  background-color: aquamarine;
+
+  position: relative;
+
+  & > div {
+    opacity: 0; /* 박스의 투명도 조절(0: 완전 투명)*/
+
+    /* hover-box에 hover이벤트가 적용되었을때
+       hover-box > div의 opacity를 0부터 1까지 
+       0.3초 동안 변경 애니메이션 적용  */
+    transition: opacity 0.3s ease;
+
+    background-color: #f5f5f5;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:hover > div {
+    opacity: 1; /* 박스의 투명도 조절(1: 완전 불투명)*/
+  }
+}
+
+.guide-section {
+  & > h3 {
+    margin: 0;
+    padding-top: 50px;
+  }
+  /* .guide-sction > ul */
+  & > ul {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+
+    padding: 10px 0;
+    border: 1px solid #000;
+    margin: 0;
+
+    /* .guide-sction > ul > li */
+    & > li {
+      display: inline-block;
+      margin: 0 10px;
+
+      /* .guide-sction > ul > li:last-child */
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
