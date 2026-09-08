@@ -1,0 +1,203 @@
+:root {
+  --header-background-color: #fed50a;
+  --header-border-color: #e3a20e;
+}
+body {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  background-color: #3d3d3d;
+}
+.header {
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid var(--header-border-color);
+  width: 100%;
+  height: 100%;
+}
+/* img {
+  vertical-align: middle;
+  width: 60px;
+} */
+.left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.left-photo {
+  width: 90px;
+}
+.mu {
+  float: right;
+  width: 53px;
+}
+.left::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.middle-title {
+  background-color: #f3f3f3;
+}
+.middle-title-ul {
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 0;
+}
+li {
+  display: inline-block;
+  width: 45%;
+}
+.first {
+  display: inline-block;
+  width: 45%;
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
+.main {
+  text-align: initial;
+  margin: 0;
+}
+.comment {
+  vertical-align: left;
+  text-align: left;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #3d3d3d;
+}
+ul {
+  padding-left: 10px;
+  display: block;
+  padding: 0;
+}
+.time {
+  padding-left: 0.8rem;
+  border-left: 1px dashed #000;
+}
+.redbox {
+  border: 1px solid #000;
+  background-color: #f00;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5px 3px;
+}
+.redtext {
+  font-weight: 600;
+  color: #f00;
+}
+.post-comment {
+  width: auto;
+  padding: 3px;
+  font-size: 0.8rem;
+  color: darkorange;
+}
+
+.writer {
+  padding-right: 10px;
+  margin-right: 5px;
+  color: darkorange;
+  border-right: 1px dashed #3d3d3d;
+}
+
+.page-nation {
+  display: inline-block;
+  padding: 5px 0;
+  width: 100%;
+  background-color: #e3e3e3;
+  margin: 0;
+  text-align: center;
+}
+
+.page-nation > ul > span {
+  padding: 10px;
+  border: 1px solid #000;
+  margin-left: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #f3f3f3;
+}
+
+.page-nation > ul > li {
+  display: inline-block;
+  width: 9px;
+  padding: 10px;
+  color: #f00;
+  border: 1px solid #f00;
+  margin-left: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #f3f3f3;
+}
+
+.last-box {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #0d0d0d;
+  padding: 10px;
+}
+
+.login {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 0 solid #3d3d3d;
+  border-radius: 5px;
+  background-color: #5d5d5d;
+  color: #f3f3f3;
+}
+
+.sample {
+  display: block;
+  padding: 3px;
+  border-bottom: 30px;
+  margin-top: 10px;
+  color: #5d5d5d;
+  border: 0px solid #3d3d3d;
+}
+
+.logo,
+.write,
+.my {
+  /* 배경이미지 지정 */
+  background-image: url(../images/goodgag_sprite.webp);
+  /* 반복 x */
+  background-repeat: no-repeat;
+
+  vertical-align: middle;
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  /* width 지정 height지정 */
+  width: 80px;
+  height: 38px;
+  /* 백그라운드 위치 지정 */
+}
+
+.write {
+  position: fixed;
+  top: 10px;
+  right: 80px;
+
+  /* width 지정 height지정 */
+  width: 40px;
+  height: 30px;
+  /* 백그라운드 위치 지정 */
+  background-position: 1px -38px;
+}
+
+.my {
+  position: fixed;
+  top: 10px;
+  right: 130px;
+
+  /* width 지정 height지정 */
+  width: 38px;
+  height: 30px;
+
+  /* 백그라운드 위치 지정 */
+  background-position: -38px -38px;
+}

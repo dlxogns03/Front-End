@@ -1,0 +1,60 @@
+.item {
+  width: 400px;
+  height: 400px;
+
+  border-radius: 50%;
+  background-color: #f00;
+
+  /* 
+  배경이미지가 가운데 나오도록 설정
+  반복은 없다.
+  */
+  background-image: url(../images/item_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* item이 hover 되었을때, 배경이미지의 크기는 20%증가한다. */
+  &:hover {
+    background-size: 120%;
+  }
+}
+
+.background-1,
+.background-2,
+.background-3 {
+  width: 1000px;
+  height: 500px;
+
+  border: 1px solid #f00;
+  margin: 2px;
+}
+
+.background-1 {
+  background-image: url(../images/image3.jpg);
+}
+.background-2 {
+  background-image: url(../images/image2.jpg);
+}
+
+.background-3 {
+  background-image: url(../images/image1.jpg);
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+}
+.center {
+  background-position: center;
+}
+
+.contain {
+  background-size: contain;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.half {
+  background-size: 50%;
+}
