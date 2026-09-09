@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+}
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+.wrapper > div {
+  border: 1px solid #3333;
+  border-radius: 5px;
+
+  margin-bottom: 1rem;
+
+  & > div {
+    width: 100%;
+    padding: 5px;
+
+    border-bottom: 1px solid #3333;
+  }
+  & > div:last-of-type {
+    border-bottom: 0;
+  }
+
+  & div[class="image-box"] {
+    background-image: url(../images/naver_sprite.png);
+    background-position: -936px -732px;
+    background-repeat: no-repeat;
+  }
+}
+.naver-sign-in {
+  margin-top: 2rem;
+}
+.id-filed > .image-box:first-of-type {
+  background-image: url(../images/naver_sprite.png);
+  background-position: -187px -883px;
+  background-repeat: no-repeat;
+}
+
+.image-box {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+
+  vertical-align: middle;
+  & + input {
+    width: 70%;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    padding: 3px 0;
+    outline: none;
+    border: 0;
+  }
+}
+
+.id-filed:has(> .image-box, > input[type="text"])::after {
+  color: #333;
+  content: "@naver.com";
+}
+
+label + input[type="checkbox"] {
+  display: none;
+}
+label:has(+ input[type="checkbox"]:checked) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border-radius: 50%;
+  background-image: url(../images/naver_sprite.png);
+  background-size: 700px 684px;
+  background-position: -498px -875px;
+  background-repeat: no-repeat;
+}
+
+label:has(+ input[type="checkbox"]:not(:checked)) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.input-area {
+  font-size: 0;
+  & > .input-field {
+    display: inline-block;
+  }
+  & label {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px;
+
+    &[for="male"] {
+      margin-left: 10rem;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    &[for="female"] {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-right: 7rem;
+    }
+
+    &[for="local"] {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    &[for="foreigner"] {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
+label + input[type="radio"] {
+  display: none;
+}
+
+/* 선택된 radio의 label 스타일 */
+label:has(+ input[type="radio"]:checked) {
+  border: 1px solid #5f5;
+  color: #5f5;
+}
+
+/* 선택되지 않은 radio label 스타일 */
+label:has(+ input[type="radio"]:not(:checked)) {
+  border: 1px solid #bbb;
+  color: #bbb;
+}
+
+span {
+  vertical-align: middle;
+
+  display: inline-block;
+
+  font-size: 0.8rem;
+  padding: 3px;
+
+  color: #5f5;
+}
+.aaa {
+  font-size: 1.05rem;
+  color: #000;
+  vertical-align: middle;
+}
+
+.terms-filed {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+select {
+  width: 70%;
+  font-size: 1.3rem;
+}

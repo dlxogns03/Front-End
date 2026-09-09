@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../css/29_naver_sign_up.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="naver-sign-in">
+        <div class="id-filed">
+          <div class="image-box"></div>
+          <input type="text" placeholder="아이디" />
+        </div>
+        <div class="password-filed">
+          <div class="image-box"></div>
+          <input type="password" placeholder="비밀번호" />
+        </div>
+        <div class="email-filed">
+          <div class="image-box"></div>
+          <input
+            type="email"
+            placeholder="[선택]이메일주소(비밀번호 찾기 등 본인 확인용)"
+          />
+        </div>
+      </div>
+      <div class="personal-information">
+        <div class="name-filed">
+          <div class="image-box"></div>
+          <input type="text" placeholder="아이디" />
+        </div>
+        <div class="birthday-filed">
+          <div class="image-box"></div>
+          <input type="date" placeholder="생년월일 8자리" />
+        </div>
+        <div class="agency">
+          <div class="image-box"></div>
+          <select id="agency-select">
+            <option>통신사 선택</option>
+            <option>LG U+</option>
+            <option>KT</option>
+            <option>SK</option>
+          </select>
+        </div>
+        <div class="input-area">
+          <div class="input-field">
+            <label for="male">남자</label>
+            <input type="radio" name="gender" id="male" />
+          </div>
+          <div class="input-field">
+            <label for="female">여자</label>
+            <input type="radio" name="gender" id="female" />
+          </div>
+          <div class="input-field">
+            <label for="local">내국인</label>
+            <input type="radio" name="nationality" id="local" />
+          </div>
+          <div class="input-field">
+            <label for="foreigner">외국인</label>
+            <input type="radio" name="nationality" id="foreigner" />
+          </div>
+        </div>
+      </div>
+      <div class="tel-input-area">
+        <div class="input-field">
+          <div class="image-box"></div>
+          <input type="tel" placeholder="휴대전화 번호" />
+        </div>
+      </div>
+      <div class="terms-filed">
+        <label for="agree"></label>
+        <input type="checkbox" name="agree-terms" id="agree" />
+        <label for="agree"
+          ><span>[필수]</span><span class="aaa">인증 약관 전체동의 </span>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
