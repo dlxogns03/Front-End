@@ -1,0 +1,68 @@
+.flex-row {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  /* flex item들의 간격 */
+  /* gap: 10px; */
+
+  & > div {
+    background-color: aquamarine;
+
+    /* Flex items */
+    flex-basis: 100px;
+    /* flex-basis: 50%; */
+    flex-grow: 1;
+
+    &:first-child {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.flex-row-reverse {
+  padding: 0;
+  margin: 0;
+
+  height: 200px;
+
+  list-style-type: none;
+
+  display: flex;
+
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.flex-Column {
+  display: flex;
+
+  height: 200px;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & > div {
+    background-color: aquamarine;
+
+    flex-basis: 50px;
+  }
+}
+
+.flex-column-reverse {
+  height: 200px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+
+  display: flex;
+
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: stretch;
+}

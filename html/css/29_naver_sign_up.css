@@ -75,7 +75,7 @@ label:has(+ input[type="checkbox"]:checked) {
   border-radius: 50%;
   background-image: url(../images/naver_sprite.png);
   background-size: 700px 684px;
-  background-position: -498px -875px;
+  background-position: -545px -630px;
   background-repeat: no-repeat;
 }
 
@@ -155,6 +155,7 @@ span {
 
 .terms-filed {
   padding: 1rem;
+  padding-left: 10px;
   vertical-align: middle;
 }
 

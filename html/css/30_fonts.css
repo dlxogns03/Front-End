@@ -1,0 +1,21 @@
+body {
+  font-family: "Nanum Pen Script", cursive;
+  /* 앞의 나눔 펜 스크립트 폰트가없을때 보여주는 기본 폰트 */
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Dongle", sans-serif;
+}
+h1 {
+  font-family: "Dongle", sans-serif;
+  font-weight: 300;
+}
+h2 {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+}
+h3 {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+}
