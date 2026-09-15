@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+.grid-area {
+  display: grid;
+  width: 90vw;
+  height: 90vh;
+
+  /* 
+  grid-template-columns: repeat(5, 1fr);<= 1fr을 5번 반복해라
+   */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+
+  border: 1px solid #000;
+  & > div {
+    border: 1px solid #333;
+  }
+  & > .merge-col {
+    grid-column: 1 / -1;
+    background-color: aliceblue;
+  }
+
+  & > .merge-row {
+    grid-column: 2 / 3;
+    grid-row: 2/ 4;
+
+    background-color: aqua;
+  }
+
+  & > .merge-row-col {
+    grid-column: 4 / -1;
+    grid-row: 3/ -1;
+    background-color: #3333;
+  }
+
+  & > .col {
+    grid-column: 2/ 4;
+
+    background-color: turquoise;
+  }
+}

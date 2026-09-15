@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+.grid {
+  width: 90vw;
+  height: 70vh;
+
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  grid-template-rows: 100px 1fr 150px;
+
+  & > .merge-col {
+    /* 영역을 합치면 데이터가 밀려난다 밀린만큼 데이터 삭제*/
+    grid-column: 2 / -1;
+
+    background-color: aqua;
+  }
+
+  & > .merge-row {
+    /* row를 합칠때는 colum의 범위까지 설정을 해준다  */
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+
+    background-color: aquamarine;
+  }
+}

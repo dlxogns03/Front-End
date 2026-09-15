@@ -1,0 +1,35 @@
+div.grid-form {
+  display: grid;
+
+  /* gird를 사용할때 content값이 설정한 범위를 벗어나는경우 */
+  /* auto를 사용할 경우 다음 content가 옆에 붙어서 나옴 */
+  /* 가장 긴값으로 맞출 경우 minmax를 사용 */
+  grid-template-columns: minmax(20px, auto) 1fr;
+  align-items: center;
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  /* 로우와 컬럼을 똑같은 값으로 gap을 준다 */
+  gap: 10px;
+
+  & > input {
+    padding: 10px;
+  }
+}
+
+.buttoon-area {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 10px;
+  & > button {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  div.grid-form {
+    grid-template-columns: 1fr;
+  }
+}
